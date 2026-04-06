@@ -1,0 +1,197 @@
+version: 2
+
+seeds:
+  - name: Address
+    config:
+      column_types:
+        AddressID: integer
+        AddressLine1: string
+        AddressLine2: string
+        City: string
+        StateProvinceID: integer
+        PostalCode: string
+        rowguid: string
+        ModifiedDate: date
+
+  - name: CountryRegion
+    config:
+      column_types:
+        CountryRegionCode: string
+        Name: string
+        ModifiedDate: date
+
+  - name: CreditCard
+    config:
+      column_types:
+        CreditCardID: integer
+        CardType: string
+        CardNumber: string
+        ExpMonth: integer
+        ExpYear: integer
+        ModifiedDate: date
+
+  - name: Customer
+    config:
+      column_types:
+        CustomerID: integer
+        PersonID: integer
+        StoreID: integer
+        TerritoryID: integer
+        AccountNumber: string
+        rowguid: string
+        ModifiedDate: date
+
+  - name: Employee
+    config:
+      column_types:
+        BusinessEntityID: integer
+        NationalIDNumber: string
+        LoginID: string
+        JobTitle: string
+        BirthDate: date
+        MaritalStatus: string
+        Gender: string
+        HireDate: date
+        SalariedFlag: integer
+        VacationHours: integer
+        SickLeaveHours: integer
+        rowguid: string
+        ModifiedDate: date
+
+  - name: PersonCreditCard
+    config:
+      column_types:
+        BusinessEntityID: integer
+        CreditCardID: integer
+        ModifiedDate: date
+
+  - name: Person
+    config:
+      column_types:
+        BusinessEntityID: integer
+        PersonType: string
+        FirstName: string
+        MiddleName: string
+        LastName: string
+        EmailPromotion: integer
+        rowguid: string
+        ModifiedDate: date
+
+  - name: Product
+    config:
+      column_types:
+        ProductID: integer
+        Name: string
+        ProductNumber: string
+        Color: string
+        StandardCost: double
+        ListPrice: double
+        Size: string
+        Weight: double
+        ProductSubcategoryID: integer
+        ProductModelID: integer
+        SellStartDate: date
+        SellEndDate: date
+        DiscontinuedDate: date
+        rowguid: string
+        ModifiedDate: date
+
+  - name: ProductCategory
+    config:
+      column_types:
+        ProductCategoryID: integer
+        Name: string
+        rowguid: string
+        ModifiedDate: date
+
+  - name: ProductSubcategory
+    config:
+      column_types:
+        ProductSubcategoryID: integer
+        ProductCategoryID: integer
+        Name: string
+        rowguid: string
+        ModifiedDate: date
+
+  - name: SalesOrderDetail
+    config:
+      column_types:
+        SalesOrderID: integer
+        SalesOrderDetailID: integer
+        CarrierTrackingNumber: string
+        OrderQty: integer
+        ProductID: integer
+        UnitPrice: double
+        UnitPriceDiscount: double
+        rowguid: string
+        ModifiedDate: date
+
+  - name: SalesOrderHeader
+    config:
+      column_types:
+        SalesOrderID: integer
+        RevisionNumber: integer
+        OrderDate: date
+        DueDate: date
+        ShipDate: date
+        Status: integer
+        OnlineOrderFlag: integer
+        SalesOrderNumber: string
+        PurchaseOrderNumber: string
+        AccountNumber: string
+        CustomerID: integer
+        SalesPersonID: integer
+        TerritoryID: integer
+        BillToAddressID: integer
+        ShipToAddressID: integer
+        ShipMethodID: integer
+        CreditCardID: integer
+        CreditCardApprovalCode: string
+        CurrencyRateID: integer
+        SubTotal: double
+        TaxAmt: double
+        Freight: double
+        TotalDue: double
+        Comment: string
+        rowguid: string
+        ModifiedDate: date
+
+  - name: SalesOrderHeaderSalesReason
+    config:
+      column_types:
+        SalesOrderID: integer
+        SalesReasonID: integer
+        ModifiedDate: date
+
+  - name: SalesPerson
+    config:
+      column_types:
+        BusinessEntityID: integer
+        TerritoryID: integer
+        SalesQuota: double
+        Bonus: double
+        CommissionPct: double
+        SalesYTD: double
+        SalesLastYear: double
+        rowguid: string
+        ModifiedDate: date
+
+  - name: SalesReason
+    config:
+      column_types:
+        SalesReasonID: integer
+        Name: string
+        ReasonType: string
+        ModifiedDate: date
+
+  - name: StateProvince
+    config:
+      column_types:
+        StateProvinceID: integer
+        StateProvinceCode: string
+        CountryRegionCode: string
+        IsOnlyStateProvinceFlag: integer
+        Name: string
+        TerritoryID: integer
+        rowguid: string
+        ModifiedDate: date
