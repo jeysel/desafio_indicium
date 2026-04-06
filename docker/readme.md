@@ -9,11 +9,13 @@ PostgreSQL da Adventure Works, utilizado como fonte de dados do projeto.
 - [Docker Compose](https://docs.docker.com/compose/install/) instalado
 
 ## Estrutura
+```bash
 docker/
 ├── docker-compose.yml    # Configuração do container PostgreSQL
 ├── install.sql           # Script de criação das tabelas e carga dos dados
 ├── README.md             # Este arquivo
 └── data/                 # CSVs originais do AdventureWorks (não versionados)
+```
 
 ## Como executar
 
