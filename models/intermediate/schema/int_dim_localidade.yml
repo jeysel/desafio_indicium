@@ -1,0 +1,24 @@
+models:
+  - name: int_dim_localidade
+    description: Modelo intermediate para dimensão de localidade enriquecida com estado e país.
+    columns:
+      - name: localidade_key
+        description: Surrogate key da dimensão localidade.
+      - name: address_id
+        description: Chave natural do endereço.
+      - name: address_line1
+        description: Primeira linha do endereço.
+      - name: address_line2
+        description: Segunda linha do endereço.
+      - name: cidade
+        description: Cidade do endereço.
+      - name: postal_code
+        description: Código postal.
+      - name: estado
+        description: Nome do estado ou província.
+      - name: state_province_code
+        description: Código do estado ou província.
+      - name: pais
+        description: Nome do país.
+      - name: country_region_code
+        description: Código do país.

@@ -1,0 +1,18 @@
+models:
+  - name: int_dim_cliente
+    description: Modelo intermediate para dimensão de clientes enriquecida com dados pessoais.
+    columns:
+      - name: cliente_key
+        description: Surrogate key da dimensão cliente.
+      - name: customer_id
+        description: Chave natural do cliente.
+      - name: first_name
+        description: Primeiro nome do cliente.
+      - name: last_name
+        description: Sobrenome do cliente.
+      - name: nome_cliente
+        description: Nome completo do cliente.
+      - name: person_type
+        description: Tipo da pessoa.
+      - name: territory_id
+        description: Território do cliente.

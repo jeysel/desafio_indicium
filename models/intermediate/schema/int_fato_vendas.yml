@@ -1,0 +1,43 @@
+models:
+  - name: int_fato_vendas
+    description: >
+      Modelo intermediate da fato de vendas. Realiza todos os joins entre
+      header, detail e dimensões. Grão: 1 linha = 1 produto em 1 pedido
+      com 1 motivo de venda (min sales_reason_id por pedido).
+    columns:
+      - name: venda_key
+        description: Surrogate key da linha de venda.
+      - name: data_key
+        description: Chave estrangeira para int_dim_data.
+      - name: produto_key
+        description: Chave estrangeira para int_dim_produto.
+      - name: cliente_key
+        description: Chave estrangeira para int_dim_cliente.
+      - name: vendedor_key
+        description: Chave estrangeira para int_dim_vendedor.
+      - name: localidade_key
+        description: Chave estrangeira para int_dim_localidade.
+      - name: cartao_key
+        description: Chave estrangeira para int_dim_cartao.
+      - name: status_key
+        description: Chave estrangeira para int_dim_status.
+      - name: motivo_venda_key
+        description: Chave estrangeira para int_dim_motivo_venda.
+      - name: sales_order_id
+        description: ID do pedido de venda.
+      - name: sales_order_detail_id
+        description: ID da linha de detalhe do pedido.
+      - name: order_date
+        description: Data do pedido.
+      - name: online_order_flag
+        description: Indica se o pedido foi feito online.
+      - name: quantidade_comprada
+        description: Quantidade de unidades compradas do produto.
+      - name: preco_unitario
+        description: Preço unitário do produto no pedido.
+      - name: desconto
+        description: Percentual de desconto aplicado.
+      - name: valor_negociado
+        description: Valor bruto — unit_price * order_qty.
+      - name: valor_negociado_liquido
+        description: Valor líquido de desconto — unit_price * order_qty * (1 - desconto).
