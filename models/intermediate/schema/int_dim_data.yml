@@ -1,0 +1,38 @@
+models:
+  - name: int_dim_data
+    description: Modelo intermediate para dimensão de datas gerado a partir da tabela dim_datas populada via procedure PostgreSQL. Período de 2005 a 2020.
+    columns:
+      - name: data_key
+        description: Surrogate key da dimensão data.
+      - name: data_completa
+        description: Data completa no formato YYYY-MM-DD.
+      - name: ano
+        description: Ano da data.
+      - name: mes
+        description: Mês da data.
+      - name: dia
+        description: Dia da data.
+      - name: trimestre
+        description: Trimestre da data.
+      - name: semana_ano
+        description: Semana do ano.
+      - name: dia_semana_num
+        description: Número do dia da semana.
+      - name: nm_mes
+        description: Nome do mês por extenso.
+      - name: nm_mes_abrev
+        description: Nome do mês abreviado.
+      - name: nm_dia_semana
+        description: Nome do dia da semana.
+      - name: ano_mes
+        description: Ano e mês no formato YYYY-MM.
+      - name: nm_trimestre
+        description: Nome do trimestre.
+      - name: sigla_trimestre
+        description: Sigla do trimestre (Q1, Q2, Q3, Q4).
+      - name: fl_fim_de_semana
+        description: Indica se é fim de semana.
+      - name: primeiro_dia_mes
+        description: Primeiro dia do mês.
+      - name: ultimo_dia_mes
+        description: Último dia do mês.
