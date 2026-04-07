@@ -1,18 +1,25 @@
-with datas as (
-    select distinct cast(orderdate as date) as data_completa
-    from {{ ref('stg_adventure_works__salesorderheader') }}
+with source as (
+    select * from {{ source('adventure_works', 'dim_datas') }}
+),
+renamed as (
+    select
+        {{ dbt_utils.generate_surrogate_key(['dt_data']) }}  as data_key,
+        dt_data                 as data_completa,
+        ano,
+        mes,
+        dia,
+        trimestre,
+        semana_ano,
+        dia_semana_num,
+        nm_mes,
+        nm_mes_abrev,
+        nm_dia_semana,
+        ano_mes,
+        nm_trimestre,
+        sigla_trimestre,
+        fl_fim_de_semana,
+        primeiro_dia_mes,
+        ultimo_dia_mes
+    from source
 )
-
-select
-    {{ dbt_utils.generate_surrogate_key(['data_completa']) }}   as data_key,
-    data_completa,
-    year(data_completa)                                         as ano,
-    month(data_completa)                                        as mes,
-    day(data_completa)                                          as dia,
-    date_format(data_completa, 'MMMM')                         as nome_mes,
-    quarter(data_completa)                                      as trimestre,
-    dayofweek(data_completa)                                    as dia_semana,
-    case when dayofweek(data_completa) in (1, 7)
-        then false else true
-    end                                                         as is_dia_util
-from datas
+select * from renamed

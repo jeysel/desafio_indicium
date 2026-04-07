@@ -1,0 +1,39 @@
+models:
+  - name: dim_produto
+    description: Dimensão de produtos com subcategoria e categoria.
+    columns:
+      - name: produto_key
+        description: Surrogate key da dimensão produto.
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: Chave natural do produto.
+      - name: product_name
+        description: Nome do produto.
+      - name: product_number
+        description: Número de referência do produto.
+      - name: color
+        description: Cor do produto.
+      - name: standard_cost
+        description: Custo padrão de fabricação.
+      - name: list_price
+        description: Preço de tabela do produto.
+      - name: size
+        description: Tamanho do produto.
+      - name: weight
+        description: Peso do produto.
+      - name: product_line
+        description: Linha do produto.
+      - name: class
+        description: Classe do produto.
+      - name: style
+        description: Estilo do produto.
+      - name: sell_start_date
+        description: Data de início de venda.
+      - name: sell_end_date
+        description: Data de fim de venda.
+      - name: product_subcategory_name
+        description: Nome da subcategoria do produto.
+      - name: product_category_name
+        description: Nome da categoria do produto.

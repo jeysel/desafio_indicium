@@ -1,0 +1,15 @@
+models:
+  - name: dim_motivo_venda
+    description: Dimensão de motivos de venda.
+    columns:
+      - name: motivo_venda_key
+        description: Surrogate key da dimensão motivo de venda.
+        tests:
+          - unique
+          - not_null
+      - name: sales_reason_id
+        description: Chave natural do motivo de venda.
+      - name: motivo_venda_name
+        description: Nome do motivo de venda.
+      - name: reason_type
+        description: Tipo do motivo de venda.

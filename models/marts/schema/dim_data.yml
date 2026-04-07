@@ -1,0 +1,25 @@
+models:
+  - name: dim_data
+    description: Dimensão de datas gerada a partir das datas de pedido.
+    columns:
+      - name: data_key
+        description: Surrogate key da dimensão data.
+        tests:
+          - unique
+          - not_null
+      - name: data_completa
+        description: Data completa no formato YYYY-MM-DD.
+      - name: ano
+        description: Ano da data.
+      - name: mes
+        description: Mês da data.
+      - name: dia
+        description: Dia da data.
+      - name: nome_mes
+        description: Nome do mês por extenso.
+      - name: trimestre
+        description: Trimestre da data.
+      - name: dia_semana
+        description: Dia da semana (1=Domingo, 7=Sábado).
+      - name: is_dia_util
+        description: Indica se é dia útil (exclui sábado e domingo).
