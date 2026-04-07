@@ -17,11 +17,16 @@ renamed as (
         territoryid             as territory_id,
         billtoaddressid         as bill_to_address_id,
         shiptoaddressid         as ship_to_address_id,
+        shipmethodid            as ship_method_id,
         creditcardid            as credit_card_id,
+        creditcardapprovalcode  as credit_card_approval_code,
+        currencyrateid          as currency_rate_id,
         subtotal                as sub_total,
         taxamt                  as tax_amt,
         freight,
         totaldue                as total_due,
+        comment,
+        rowguid                 as row_guid,
         modifieddate            as modified_date
     from source
 )
