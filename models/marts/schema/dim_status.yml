@@ -1,0 +1,13 @@
+models:
+  - name: dim_status
+    description: Dimensão de status dos pedidos de venda.
+    columns:
+      - name: status_key
+        description: Surrogate key da dimensão status.
+        tests:
+          - unique
+          - not_null
+      - name: status
+        description: Código numérico do status do pedido.
+      - name: status_descricao
+        description: Descrição do status do pedido.

@@ -1,0 +1,21 @@
+models:
+  - name: dim_cartao
+    description: Dimensão de cartões de crédito.
+    columns:
+      - name: cartao_key
+        description: Surrogate key da dimensão cartão.
+        tests:
+          - unique
+          - not_null
+      - name: credit_card_id
+        description: Chave natural do cartão de crédito.
+      - name: card_type
+        description: Tipo do cartão de crédito.
+      - name: card_number
+        description: Número do cartão de crédito.
+      - name: exp_month
+        description: Mês de expiração do cartão.
+      - name: exp_year
+        description: Ano de expiração do cartão.
+      - name: business_entity_id
+        description: Chave estrangeira para a pessoa dona do cartão.
