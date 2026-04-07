@@ -10,8 +10,6 @@ models:
         description: Chave estrangeira para store.
       - name: territory_id
         description: Chave estrangeira para territory.
-      - name: account_number
-        description: Número da conta do cliente.
       - name: row_guid
         description: Identificador único global.
       - name: modified_date

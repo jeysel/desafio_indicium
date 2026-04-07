@@ -7,7 +7,6 @@ renamed as (
         personid            as person_id,
         storeid             as store_id,
         territoryid         as territory_id,
-        accountnumber       as account_number,
         rowguid             as row_guid,
         modifieddate        as modified_date
     from source
