@@ -18,8 +18,8 @@ models:
         description: Percentual de desconto aplicado ao preço unitário.
       - name: valor_negociado
         description: Valor bruto — unit_price * order_qty.
-      - name: valor_liquido
-        description: Valor líquido — unit_price * order_qty * (1 - unit_price_discount).
+      - name: valor_negociado_liquido
+        description: Valor líquido de desconto comercial — unit_price * order_qty * (1 - unit_price_discount).
       - name: row_guid
         description: Identificador único global.
       - name: modified_date

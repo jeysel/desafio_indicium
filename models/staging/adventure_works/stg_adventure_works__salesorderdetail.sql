@@ -11,7 +11,7 @@ renamed as (
         unitprice               as unit_price,
         unitpricediscount       as unit_price_discount,
         unitprice * orderqty                                as valor_negociado,
-        unitprice * orderqty * (1 - unitpricediscount)     as valor_liquido,
+        unitprice * orderqty * (1 - unitpricediscount)     as valor_negociado_liquido,
         rowguid                 as row_guid,
         modifieddate            as modified_date
     from source
