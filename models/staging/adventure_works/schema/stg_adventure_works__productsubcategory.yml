@@ -1,0 +1,14 @@
+models:
+  - name: stg_adventure_works__productsubcategory
+    description: Modelo staging para subcategorias de produto.
+    columns:
+      - name: product_subcategory_id
+        description: Chave primária da subcategoria de produto.
+      - name: product_category_id
+        description: Chave estrangeira para productcategory.
+      - name: product_subcategory_name
+        description: Nome da subcategoria de produto.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

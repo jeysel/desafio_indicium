@@ -1,0 +1,30 @@
+models:
+  - name: stg_adventure_works__employee
+    description: Modelo staging para funcionários.
+    columns:
+      - name: business_entity_id
+        description: Chave primária do funcionário.
+      - name: national_id_number
+        description: Número do documento nacional do funcionário.
+      - name: login_id
+        description: Login de acesso do funcionário.
+      - name: job_title
+        description: Cargo do funcionário.
+      - name: birth_date
+        description: Data de nascimento do funcionário.
+      - name: marital_status
+        description: Estado civil do funcionário.
+      - name: gender
+        description: Gênero do funcionário.
+      - name: hire_date
+        description: Data de contratação do funcionário.
+      - name: salaried_flag
+        description: Indica se o funcionário é assalariado.
+      - name: vacation_hours
+        description: Horas de férias disponíveis.
+      - name: sick_leave_hours
+        description: Horas de licença médica disponíveis.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

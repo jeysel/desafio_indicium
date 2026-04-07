@@ -1,0 +1,20 @@
+models:
+  - name: stg_adventure_works__address
+    description: Modelo staging para endereços.
+    columns:
+      - name: address_id
+        description: Chave primária da tabela address.
+      - name: address_line1
+        description: Primeira linha do endereço.
+      - name: address_line2
+        description: Segunda linha do endereço.
+      - name: city
+        description: Cidade do endereço.
+      - name: state_province_id
+        description: Chave estrangeira para state_province.
+      - name: postal_code
+        description: Código postal do endereço.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

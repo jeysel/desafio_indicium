@@ -38,3 +38,4 @@ seeds:
     adventure_works:
       +schema: raw_adventure_works
       +catalog: adventure_works
+      

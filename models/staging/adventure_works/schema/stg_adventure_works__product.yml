@@ -1,0 +1,34 @@
+models:
+  - name: stg_adventure_works__product
+    description: Modelo staging para produtos.
+    columns:
+      - name: product_id
+        description: Chave primária do produto.
+      - name: product_name
+        description: Nome do produto.
+      - name: product_number
+        description: Número de referência do produto.
+      - name: color
+        description: Cor do produto.
+      - name: standard_cost
+        description: Custo padrão de fabricação do produto.
+      - name: list_price
+        description: Preço de tabela do produto.
+      - name: size
+        description: Tamanho do produto.
+      - name: weight
+        description: Peso do produto.
+      - name: product_subcategory_id
+        description: Chave estrangeira para productsubcategory.
+      - name: product_model_id
+        description: Chave estrangeira para productmodel.
+      - name: sell_start_date
+        description: Data de início de venda do produto.
+      - name: sell_end_date
+        description: Data de fim de venda do produto.
+      - name: discontinued_date
+        description: Data de descontinuação do produto.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

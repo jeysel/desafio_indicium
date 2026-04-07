@@ -1,0 +1,16 @@
+models:
+  - name: stg_adventure_works__customer
+    description: Modelo staging para clientes.
+    columns:
+      - name: customer_id
+        description: Chave primária do cliente.
+      - name: person_id
+        description: Chave estrangeira para person.
+      - name: store_id
+        description: Chave estrangeira para store.
+      - name: territory_id
+        description: Chave estrangeira para territory.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.
