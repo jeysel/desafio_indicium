@@ -1,0 +1,10 @@
+models:
+  - name: stg_adventure_works__countryregion
+    description: Modelo staging para países e regiões.
+    columns:
+      - name: country_region_code
+        description: Chave primária — código do país/região.
+      - name: country_region_name
+        description: Nome do país ou região.
+      - name: modified_date
+        description: Data de modificação do registro.

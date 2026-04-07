@@ -1,0 +1,10 @@
+models:
+  - name: stg_adventure_works__salesorderheadersalesreason
+    description: Modelo staging para associação entre pedido e motivo de venda.
+    columns:
+      - name: sales_order_id
+        description: Chave estrangeira para salesorderheader.
+      - name: sales_reason_id
+        description: Chave estrangeira para salesreason.
+      - name: modified_date
+        description: Data de modificação do registro.

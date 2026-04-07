@@ -1,0 +1,10 @@
+models:
+  - name: stg_adventure_works__personcreditcard
+    description: Modelo staging para associação entre pessoa e cartão de crédito.
+    columns:
+      - name: business_entity_id
+        description: Chave estrangeira para person.
+      - name: credit_card_id
+        description: Chave estrangeira para creditcard.
+      - name: modified_date
+        description: Data de modificação do registro.

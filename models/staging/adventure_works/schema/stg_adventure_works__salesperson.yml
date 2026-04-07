@@ -1,0 +1,22 @@
+models:
+  - name: stg_adventure_works__salesperson
+    description: Modelo staging para vendedores.
+    columns:
+      - name: business_entity_id
+        description: Chave primária do vendedor.
+      - name: territory_id
+        description: Chave estrangeira para territory.
+      - name: sales_quota
+        description: Cota de vendas do vendedor.
+      - name: bonus
+        description: Bônus do vendedor.
+      - name: commission_pct
+        description: Percentual de comissão do vendedor.
+      - name: sales_ytd
+        description: Total de vendas do vendedor no ano corrente.
+      - name: sales_last_year
+        description: Total de vendas do vendedor no ano anterior.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.
