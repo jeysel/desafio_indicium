@@ -1,0 +1,26 @@
+models:
+  - name: int_dim_vendedor
+    description: Modelo intermediate para dimensão de vendedores enriquecida com dados do funcionário e pessoa.
+    columns:
+      - name: vendedor_key
+        description: Surrogate key da dimensão vendedor.
+      - name: sales_person_id
+        description: Chave natural do vendedor.
+      - name: first_name
+        description: Primeiro nome do vendedor.
+      - name: last_name
+        description: Sobrenome do vendedor.
+      - name: nome_vendedor
+        description: Nome completo do vendedor.
+      - name: job_title
+        description: Cargo do vendedor.
+      - name: sales_quota
+        description: Cota de vendas do vendedor.
+      - name: sales_ytd
+        description: Total de vendas no ano corrente.
+      - name: sales_last_year
+        description: Total de vendas no ano anterior.
+      - name: commission_pct
+        description: Percentual de comissão do vendedor.
+      - name: territory_id
+        description: Território do vendedor.

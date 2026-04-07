@@ -1,0 +1,10 @@
+models:
+  - name: int_dim_status
+    description: Modelo intermediate para dimensão de status dos pedidos de venda.
+    columns:
+      - name: status_key
+        description: Surrogate key da dimensão status.
+      - name: status
+        description: Código numérico do status do pedido.
+      - name: status_descricao
+        description: Descrição do status — Em Processo, Aprovado, Pendente, Rejeitado, Enviado ou Cancelado.
