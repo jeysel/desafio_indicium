@@ -1,0 +1,20 @@
+models:
+  - name: stg_adventure_works__person
+    description: Modelo staging para pessoas.
+    columns:
+      - name: business_entity_id
+        description: Chave primária da pessoa.
+      - name: person_type
+        description: Tipo da pessoa (cliente, funcionário, vendedor etc).
+      - name: first_name
+        description: Primeiro nome da pessoa.
+      - name: middle_name
+        description: Nome do meio da pessoa.
+      - name: last_name
+        description: Sobrenome da pessoa.
+      - name: email_promotion
+        description: Nível de promoção por email aceito pela pessoa.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

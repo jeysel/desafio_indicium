@@ -1,0 +1,20 @@
+models:
+  - name: stg_adventure_works__stateprovince
+    description: Modelo staging para estados e províncias.
+    columns:
+      - name: state_province_id
+        description: Chave primária do estado/província.
+      - name: state_province_code
+        description: Código do estado/província.
+      - name: country_region_code
+        description: Chave estrangeira para countryregion.
+      - name: is_only_state_province_flag
+        description: Indica se é o único estado/província do país.
+      - name: state_province_name
+        description: Nome do estado/província.
+      - name: territory_id
+        description: Chave estrangeira para territory.
+      - name: row_guid
+        description: Identificador único global.
+      - name: modified_date
+        description: Data de modificação do registro.

@@ -1,0 +1,16 @@
+models:
+  - name: stg_adventure_works__creditcard
+    description: Modelo staging para cartões de crédito.
+    columns:
+      - name: credit_card_id
+        description: Chave primária do cartão de crédito.
+      - name: card_type
+        description: Tipo do cartão de crédito.
+      - name: card_number
+        description: Número do cartão de crédito.
+      - name: exp_month
+        description: Mês de expiração do cartão.
+      - name: exp_year
+        description: Ano de expiração do cartão.
+      - name: modified_date
+        description: Data de modificação do registro.

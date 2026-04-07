@@ -1,0 +1,12 @@
+models:
+  - name: stg_adventure_works__salesreason
+    description: Modelo staging para motivos de venda.
+    columns:
+      - name: sales_reason_id
+        description: Chave primária do motivo de venda.
+      - name: sales_reason_name
+        description: Nome do motivo de venda.
+      - name: reason_type
+        description: Tipo do motivo de venda.
+      - name: modified_date
+        description: Data de modificação do registro.

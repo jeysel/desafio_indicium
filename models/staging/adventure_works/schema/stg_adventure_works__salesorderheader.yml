@@ -1,0 +1,44 @@
+models:
+  - name: stg_adventure_works__salesorderheader
+    description: Modelo staging para cabeçalho dos pedidos de venda.
+    columns:
+      - name: sales_order_id
+        description: Chave primária do pedido de venda.
+      - name: revision_number
+        description: Número de revisão do pedido.
+      - name: order_date
+        description: Data do pedido.
+      - name: due_date
+        description: Data de vencimento do pedido.
+      - name: ship_date
+        description: Data de envio do pedido.
+      - name: status
+        description: Status do pedido.
+      - name: online_order_flag
+        description: Indica se o pedido foi feito online.
+      - name: purchase_order_number
+        description: Número do pedido de compra.
+      - name: account_number
+        description: Número da conta do cliente.
+      - name: customer_id
+        description: Chave estrangeira para customer.
+      - name: sales_person_id
+        description: Chave estrangeira para salesperson.
+      - name: territory_id
+        description: Chave estrangeira para territory.
+      - name: bill_to_address_id
+        description: Chave estrangeira para address de cobrança.
+      - name: ship_to_address_id
+        description: Chave estrangeira para address de entrega.
+      - name: credit_card_id
+        description: Chave estrangeira para creditcard.
+      - name: sub_total
+        description: Subtotal do pedido.
+      - name: tax_amt
+        description: Valor do imposto do pedido.
+      - name: freight
+        description: Valor do frete do pedido.
+      - name: total_due
+        description: Valor total do pedido.
+      - name: modified_date
+        description: Data de modificação do registro.
