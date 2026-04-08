@@ -7,6 +7,7 @@ models:
       - name: venda_key
         description: Surrogate key da linha de venda.
         tests:
+          - unique
           - not_null
       - name: data_key
         description: Chave estrangeira para dim_data.

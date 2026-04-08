@@ -24,13 +24,13 @@ plataforma moderna de analytics para responder perguntas estratégicas de negóc
 
 ```bash
 
-raw_adventure_works (Databricks)
-└── 17 tabelas seeds (CSVs)
-dbt_jeysel_staging (Databricks)
-└── 16 views stg_adventure_works__*
-dbt_jeysel_marts (Databricks)
-├── 8 dimensões (dim_*)
-└── 1 fato (fato_vendas)
+adventure_works/
+└── raw_adventure_works/     
+
+dev/
+├── dbt_jeysel_staging/     
+├── dbt_jeysel_intermediate/ 
+└── dbt_jeysel_marts/        
 
 ```
 ## Modelagem dimensional
