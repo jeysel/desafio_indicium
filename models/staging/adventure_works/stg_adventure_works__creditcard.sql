@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('adventure_works', 'creditcard') }}
+    select * from {{ source('adventure_works', 'sales_creditcard') }}
 ),
 renamed as (
     select
