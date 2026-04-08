@@ -1,5 +1,5 @@
 with datas as (
-    select * from {{ source('adventure_works', 'dim_datas') }}
+    select * from {{ source('adventure_works_seeds', 'dim_datas') }}
 ),
 datas_enriquecido as (
     select

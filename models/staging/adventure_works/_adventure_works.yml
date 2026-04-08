@@ -2,103 +2,108 @@ version: 2
 
 sources:
   - name: adventure_works
-    database: adventure_works
-    schema: raw_adventure_works
+    database: fea_academy
+    schema: adventure_works
     tables:
-      - name: salesorderheader
+      - name: sales_salesorderheader
         columns:
           - name: salesorderid
             tests:
               - unique
               - not_null
-      - name: salesorderdetail
+      - name: sales_salesorderdetail
         columns:
           - name: salesorderdetailid
             tests:
               - unique
               - not_null
-      - name: product
+      - name: production_product
         columns:
           - name: productid
             tests:
               - unique
               - not_null
-      - name: customer
-        columns:
-          - name: customerid
-            tests:
-              - unique
-              - not_null
-      - name: person
-        columns:
-          - name: businessentityid
-            tests:
-              - unique
-              - not_null
-      - name: address
-        columns:
-          - name: addressid
-            tests:
-              - unique
-              - not_null
-      - name: creditcard
-        columns:
-          - name: creditcardid
-            tests:
-              - unique
-              - not_null
-      - name: salesperson
-        columns:
-          - name: businessentityid
-            tests:
-              - unique
-              - not_null
-      - name: salesreason
-        columns:
-          - name: salesreasonid
-            tests:
-              - unique
-              - not_null
-      - name: stateprovince
-        columns:
-          - name: stateprovinceid
-            tests:
-              - unique
-              - not_null
-      - name: countryregion
-        columns:
-          - name: countryregioncode
-            tests:
-              - unique
-              - not_null
-      - name: productcategory
+      - name: production_productcategory
         columns:
           - name: productcategoryid
             tests:
               - unique
               - not_null
-      - name: productsubcategory
+      - name: production_productsubcategory
         columns:
           - name: productsubcategoryid
             tests:
               - unique
               - not_null
-      - name: employee
+      - name: sales_customer
+        columns:
+          - name: customerid
+            tests:
+              - unique
+              - not_null
+      - name: person_person
         columns:
           - name: businessentityid
             tests:
               - unique
               - not_null
-      - name: personcreditcard
+      - name: sales_salesreason
         columns:
-          - name: creditcardid
+          - name: salesreasonid
             tests:
+              - unique
               - not_null
-      - name: salesorderheadersalesreason
+      - name: sales_salesorderheadersalesreason
         columns:
           - name: salesorderid
             tests:
               - not_null
+      - name: sales_salesperson
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null
+      - name: humanresources_employee
+        columns:
+          - name: businessentityid
+            tests:
+              - unique
+              - not_null
+      - name: person_address
+        columns:
+          - name: addressid
+            tests:
+              - unique
+              - not_null
+      - name: person_stateprovince
+        columns:
+          - name: stateprovinceid
+            tests:
+              - unique
+              - not_null
+      - name: person_countryregion
+        columns:
+          - name: countryregioncode
+            tests:
+              - unique
+              
+      - name: sales_creditcard
+        columns:
+          - name: creditcardid
+            tests:
+              - unique
+              - not_null
+      - name: sales_personcreditcard
+        columns:
+          - name: creditcardid
+            tests:
+              - not_null
+
+  - name: adventure_works_seeds
+    database: adventure_works
+    schema: raw_adventure_works
+    tables:
       - name: dim_datas
         columns:
           - name: dt_data

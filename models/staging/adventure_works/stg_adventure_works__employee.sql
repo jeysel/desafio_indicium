@@ -1,5 +1,5 @@
 with source as (
-    select * from {{ source('adventure_works', 'employee') }}
+    select * from {{ source('adventure_works', 'humanresources_employee') }}
 ),
 renamed as (
     select
